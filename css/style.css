@@ -52,6 +52,10 @@ header{
 
     /* ? section info */
 
+.info{
+    margin-bottom: 100px;
+}
+
         /* ! section partner */
 
 .partner{
@@ -68,16 +72,80 @@ header{
 
         /* ! section operations */
 
+.operations{
+    margin: 100px 0;
+}
+
+.operations-main{
+    flex-wrap: wrap;
+}
+
 .oper-col{
-    height: 600px;
+    height: 500px;
     width: calc(100% / 3);
     padding: 15px;
+}
+
+        /* ! section info-footer */
+
+.info-footer{
+    height: 200px;
+}
+
+    /* ? section media */
+
+.media-col{
+    width: calc(100% / 3);
+    height: 600px;
+}
+
+.media-box-row{
+    height: 50%;
+}
+
+        /* ! section apply */
+
+.apply{
+    height: 300px;
+    background-color: var(--bg-lightblue);
+}
+
+.apply-container{
+    height: 300px;
+}
+
+.apply-col{
+    width: 50%;
+}
+
+        /* ! section FAQ */
+
+.FAQ{
+    margin: 100px 0;
+    height: 400px;
+}
+
+/* footer */
+
+footer{
+    background-color: #000;
+    height: 400px;
+    padding: 70px 0;
+}
+
+.footer-col{
+    height: 200px;
+    width: calc(100% / 5);
 }
 
 /* utils */
 
 .debug{
     border: 2px dashed black;
+}
+
+.debug-w{
+    border: 2px dashed white;
 }
 
 .container-big{
@@ -96,4 +164,11 @@ header{
 
 .margin-top-50{
     margin-top: 50px;
+}
+
+.line{
+    background-color: gray;
+    height: 1px;
+    margin: 40px 0;
+    width: 90px;
 }

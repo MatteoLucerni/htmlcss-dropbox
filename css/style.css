@@ -57,8 +57,14 @@ address{
 /* header */
 
 header{
+    background-color: white;
     height: 60px;
     padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .navbar{
@@ -92,6 +98,7 @@ header ul{
 /* main */
 
 .hero{
+    margin-top: 60px;
     padding-top: 80px;
     background-color: var(--bg-lightblue);
 }
@@ -280,6 +287,7 @@ header ul{
     display: flex;
     padding: 35px 0px;
     padding-right: 40px;
+    cursor: pointer;
 }
 
 /* footer */

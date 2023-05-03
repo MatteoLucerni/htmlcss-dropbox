@@ -24,6 +24,11 @@ a{
     color: currentColor;
 }
 
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
 /* header */
 
 header{
@@ -50,14 +55,33 @@ header ul{
     margin-left: 30px;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* main */
+
+.hero{
+    padding-top: 80px;
+    background-color: var(--bg-lightblue);
+}
+
+.hero-main, .hero h1{
+    transform: translateY(20%);
+}
+
+.hero-main-text{
+    flex-basis: 60%;
+}
+
+.hero-main-text > i{
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+}
 
     /* ? section plans */
 
-.hero{
-    background-color: var(--bg-lightblue);
-    height: 800px;
-}
 
 .plans{
     margin: 150px 0;
@@ -179,7 +203,7 @@ footer{
 }
 
 .container-big{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -207,6 +231,7 @@ footer{
     background-color: var(--btn-blue);
     border-color: transparent;
     color: white;
+    cursor: pointer;
 }
 
 .btn-small{
@@ -214,5 +239,18 @@ footer{
 }
 
 .btn-big{
-    padding: 5px 30px;
+    padding: 10px 20px;
+    min-width: 200px;
+}
+
+.v-margin-30{
+    margin: 30px 0;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.cursor{
+    cursor: pointer;
 }

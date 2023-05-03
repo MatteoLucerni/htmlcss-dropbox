@@ -14,11 +14,6 @@
     --btn-blue: #0161ff;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-}
-
 a{
     text-decoration: none;
     color: currentColor;
@@ -27,6 +22,22 @@ a{
 h1{
     font-size: 3.5rem;
     font-weight: 800;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size: 0.9rem;
+}
+
+hr{
+    color: gray;
 }
 
 /* header */
@@ -59,6 +70,11 @@ img{
     max-width: 100%;
 }
 
+header ul{
+    list-style: none;
+    display: flex;
+}
+
 /* main */
 
 .hero{
@@ -88,7 +104,23 @@ img{
 }
 
 .plans-header{
-    height: 200px;
+    margin-bottom: 40px;
+}
+
+.checkbox{
+    margin-top: 50px;
+}
+
+.bill, .bill-checked{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.bill-checked{
+    border: 5px solid var(--btn-blue);
 }
 
 .plans-main{
@@ -96,13 +128,47 @@ img{
 }
 
 .plans-col{
-    height: 800px;
+    border: 1px solid gray;
     width: calc(100% / 3);
 }
 
-.plans-footer{
-    height: 300px;
+.plans-col-header{
+    padding: 10px 0px;
+    text-align: center;
 }
+
+.plans-col-main{
+    padding: 0 25px;
+    margin-bottom: 50px;
+    line-height: 40px;
+}
+
+.phrase{
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.plans ul{
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.plans ul li{
+    margin-bottom: 18px;
+}
+
+.checkblue i{
+    color: var(--btn-blue);
+}
+
+.plans-footer{
+    border: 1px solid gray;
+}
+
+.plans-footer-text{
+    padding: 25px;
+}
+
 
     /* ? section info */
 
@@ -112,16 +178,13 @@ img{
 
         /* ! section partner */
 
-.partner{
-    height: 600px;
-}
-
 .partner-img{
     width: 55%;
 }
 
 .partner-text{
     width: 45%;
+    padding: 40px;
 }
 
         /* ! section operations */
@@ -132,12 +195,16 @@ img{
 
 .operations-main{
     flex-wrap: wrap;
+    margin: 0 -30px;
 }
 
 .oper-col{
-    height: 500px;
+    padding: 30px;
     width: calc(100% / 3);
-    padding: 15px;
+}
+
+.oper-col > h3{
+    margin-bottom: 25px;
 }
 
         /* ! section info-footer */
@@ -208,7 +275,7 @@ footer{
 }
 
 .container-small{
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -216,9 +283,6 @@ footer{
     display: flex;
 }
 
-.margin-top-50{
-    margin-top: 50px;
-}
 
 .line{
     background-color: gray;
@@ -238,9 +302,18 @@ footer{
     padding: 2px 10px;
 }
 
+.btn-medium-white{
+    background-color: white;
+    border: 1px solid black;
+    color: #000;
+    padding: 10px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 .btn-big{
     padding: 10px 20px;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .v-margin-30{
@@ -254,3 +327,33 @@ footer{
 .cursor{
     cursor: pointer;
 }
+
+.v-align-m{
+    vertical-align: middle;
+}
+
+.margin-left-50{
+    margin-left: 50px;
+}
+
+.margin-top-50{
+    margin-top: 50px;
+}
+
+.margin-top-30{
+    margin-top: 30px;
+}
+
+.margin-bot-30{
+    margin-bottom: 30px;
+}
+
+.margin-bot-20{
+    margin-bottom: 20px;
+}
+
+.classic-link{
+    color: blue;
+    text-decoration: underline;
+}
+

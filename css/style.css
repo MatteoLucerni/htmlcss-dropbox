@@ -425,6 +425,10 @@ footer ul li a:hover{
     padding: 8px 8px;
 }
 
+.apply .btn-medium-white:active{
+    padding: 8px 35px;
+}
+
 .btn-big{
     padding: 10px 20px;
     min-width: 250px;

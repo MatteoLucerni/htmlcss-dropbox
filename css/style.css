@@ -102,9 +102,10 @@ header ul li{
 }
 
 header ul li:hover{
-    border-bottom: 2px solid black;
-    color: black;
+    border-bottom: 1px solid var(--btn-blue);
+    color: var(--btn-blue);
     font-weight: 500;
+    transition: ease-in-out .3s;
 }
 
 /* main */

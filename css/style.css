@@ -15,13 +15,13 @@
     --bg-designit: #a2d39b;
     --border-designit: #d1e9cd;
     --bg-asu: #61082b;
+    --border-asu: #6e334b;
     --bg-uf: #0093ce;
     --bg-topps: #ff1c1c;
     --bg-wbr: #d5001f;
     --bg-hearst: #b4d0e7;
     --bg-lonely: #0d2481;
     --bg-clear: #ffd830;
-
 }
 
 a{
@@ -71,6 +71,7 @@ header{
     height: 100%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .ul-left, .ul-right{
@@ -93,6 +94,17 @@ img{
 header ul{
     list-style: none;
     display: flex;
+}
+
+header ul li{
+    height: 60px;
+    line-height: 60px; 
+}
+
+header ul li:hover{
+    border-bottom: 2px solid black;
+    color: black;
+    font-weight: 500;
 }
 
 /* main */
@@ -245,11 +257,16 @@ header ul{
     align-items: center;
     height: 300px;
     width: 50%;
+    border: 10px solid transparent;
+}
+
+.media-box:hover{
+    border: 10px solid rgba(255, 255, 255, 0.4)
 }
 
 .media-box > img{
-    height: 50%;
     width: 50%;
+    filter: invert(1);
 }
 
 .media-col > img{
@@ -283,11 +300,27 @@ header ul{
 }
 
 .FAQ-item{
-    justify-content: space-between;
-    display: flex;
     padding: 35px 0px;
     padding-right: 40px;
     cursor: pointer;
+}
+
+.FAQ-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FAQ-hover{
+    margin: 20px 0;
+    display: none;
+}
+
+.FAQ-item:hover .FAQ-hover{
+    display: block;
+}
+
+.FAQ-item:hover i{
+    transform: rotate(180deg);
 }
 
 /* footer */
@@ -320,6 +353,10 @@ footer ul li{
 footer ul li a{
     font-size: 0.8rem;
     font-weight: 300;
+}
+
+footer ul li a:hover{
+    color: rgb(177, 177, 177);
 }
 
 .lang{
@@ -366,6 +403,10 @@ footer ul li a{
     cursor: pointer;
 }
 
+.btn:active{
+    border: 3px solid var(--bg-lightblue);
+}
+
 .btn-small{
     padding: 2px 10px;
 }
@@ -377,6 +418,10 @@ footer ul li a{
     padding: 10px 10px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.btn-medium-white:active{
+    padding: 8px 8px;
 }
 
 .btn-big{
@@ -402,6 +447,10 @@ footer ul li a{
 
 .margin-left-50{
     margin-left: 50px;
+}
+
+.margin-left-30{
+    margin-left: 30px;
 }
 
 .margin-top-50{
@@ -434,9 +483,8 @@ footer ul li a{
     text-decoration: underline;
 }
 
-.colors-designit{
+.bg-designit{
     background-color: var(--bg-designit);
-    border: 10px solid var(--border-designit);
 }
 
 .bg-asu{
@@ -478,6 +526,3 @@ footer ul li a{
 .no-border{
     border: none;
 }
-
-
-

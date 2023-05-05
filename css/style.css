@@ -7,6 +7,7 @@
     font-family: 'Kanit', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -54,17 +55,86 @@ address{
     font-style: normal;
 }
 
+/* chat */
+
+.chat{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    height: 500px;
+    width: 300px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.4), 0 3px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.chat-header{
+    padding: 15px;
+    color: white;
+    background-color: var(--btn-blue);
+    justify-content: space-between;
+}
+
+.chat-hero{
+    margin-top: 20px;
+    margin-left: 13px;
+}
+
+.chat-hero i{
+    font-size: 23px;
+    color: white;
+    background-color: var(--btn-blue);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.chat-main{
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+    left: 15px;
+    border-top: 1px solid black;
+    padding-top: 15px;
+}
+
+.chat-main > input{
+    font-size: 1.1rem;
+    border: none;
+    padding: 5px;
+}
+
+.chat-main > span{
+    color: var(--btn-blue);
+    cursor: pointer;
+}
+
+.chat-footer{
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    background-color: var(--btn-blue);
+    padding: 7px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* header */
 
 header{
     background-color: white;
+    box-shadow: 0 1px 5px 0 gray;
     height: 60px;
     padding: 10px 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar{
@@ -72,6 +142,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 2;
 }
 
 .ul-left, .ul-right{
@@ -80,7 +151,6 @@ header{
 
 header ul{
     color: gray;
-    column-gap: 30px;
 }
 
 .ul-left > ul{
@@ -96,16 +166,58 @@ header ul{
     display: flex;
 }
 
-header ul li{
+.ul-left > ul > li, .ul-right > ul > li{
     height: 60px;
     line-height: 60px; 
+    padding: 0px 15px;
 }
 
-header ul li:hover{
-    border-bottom: 1px solid var(--btn-blue);
-    color: var(--btn-blue);
-    font-weight: 500;
-    transition: ease-in-out .3s;
+.ul-left > ul > li:hover, .ul-right > ul > li:hover{
+    border-bottom: 1px solid black;
+    color: black;
+    transition: ease-in-out .2s;
+}
+
+.ul-left > ul > li:hover{
+    background-color: lightgray;
+}
+
+.ul-left > ul > li:hover div.show-menu{
+    display: flex;
+    color: gray;
+}
+
+.show-menu{
+    position: absolute;
+    background-color: lightgray;
+    padding: 15px 20px;
+    line-height: 30px;
+    display: none;
+    margin-left: -15px;
+    animation: late-popup .3s;
+}
+
+@keyframes late-popup {
+    0%{
+        scale: 95%;
+    }
+    
+    100%{
+        scale: 100%;
+    }
+}
+
+.show-menu-ul{
+    display: list-item;
+}
+
+#why-menu{
+    width: 400px;
+    justify-content: space-between;
+}
+
+.show-menu .fa-ul{
+    display: list-item;
 }
 
 /* main */
@@ -124,17 +236,17 @@ header ul li:hover{
     flex-basis: 60%;
 }
 
-.hero-main-text > i{
+.hero-main-text a i{
     position: absolute;
-    left: 0;
     bottom: 25%;
 }
+
 
     /* ? section plans */
 
 
 .plans{
-    margin: 150px 0;
+    margin: 250px 0;
 }
 
 .plans-header{
@@ -201,6 +313,10 @@ header ul li:hover{
 
 .plans-footer-text{
     padding: 25px;
+}
+
+#anchor{
+    padding-top: 70px;
 }
 
 

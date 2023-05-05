@@ -12,6 +12,27 @@
     <title>Dropbox</title>
 </head>
 <body>
+    <div class="chat">
+        <div class="chat-header flex">
+            <i class="fa-solid fa-comments"></i>
+            <span>Chat</span>
+            <div class="cursor">
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="chat-hero">
+            <i class="fa-brands fa-dropbox v-align-m"></i>
+            <span class="v-align-m">Ciao come posso aiutarti?</span>
+        </div>
+        <div class="chat-main flex">
+            <input type="text" name="support" id="support" placeholder="Scrivi il tuo messaggio...">
+            <span><i class="fa-solid fa-paper-plane"></i></span>
+        </div>
+        <div class="chat-footer">
+            <i class="fa-brands fa-dropbox"></i>
+        </div>
+    </div>
     <header>
         <nav class="navbar flex">
             <div class="ul-left flex">
@@ -19,12 +40,98 @@
                 <ul>
                     <li>
                         <a href="#">Perchè Dropbox</a>
+                        <div id="why-menu" class="show-menu">
+                            <div>
+                                <h5>Panoramica</h5>
+                                <ul class="show-menu-ul">
+                                    <li>
+                                        <a href="#">Ispirati</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cosa dicono i clienti</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Integrazioni app</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Risorse</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Altro</h5>
+                                <ul class="show-menu-ul">
+                                    <li>
+                                        <a href="#">Entra</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cosa dicono i clienti</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Integrazioni app</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Risorse</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Risorse</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Integrazioni app</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cosa dicono i clienti</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a href="#">Funzioni</a>
+                        <div class="show-menu">
+                            <div>
+                                <h5>Funzioni</h5>
+                                <ul class="show-menu-ul fa-ul">
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fa-solid fa-user"></i>
+                                        </span>
+                                        1 utente
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fa-solid fa-folder"></i>
+                                        </span>
+                                        5 TB di spazio di archiviazione sicuro
+                                    </li>
+                                    <li>
+                                        <span class="fa-li">
+                                            <i class="fa-solid fa-share-nodes"></i>
+                                        </span>
+                                        Funzioni di produttività premium e condivisione file semplice e sicura
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
                     </li>
                     <li>
                         <a href="#">Piani e Prezzi</a>
+                        <div class="show-menu">
+                            <div>
+                                <h5>Scopri i nostri piani</h5>
+                                <ul class="show-menu-ul">
+                                    <li>
+                                        <a href="#anchor">Professional</a>
+                                    </li>
+                                    <li>
+                                        <a href="#anchor">Advanced</a>
+                                    </li>
+                                    <li>
+                                        <a href="#anchor">Enterprise</a>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -57,7 +164,7 @@
                         <br>
                         <button class="btn btn-big v-margin-30">Inizia la tua prova gratuita</button>
                         <p>Annulla in qualsiasi momento</p>
-                        <i class="fa-solid fa-arrow-down fa-2x cursor"></i>
+                        <a href="#anchor"><i class="fa-solid fa-arrow-down fa-bounce fa-3x cursor"></i></a>
                     </div>
                     <div class="hero-main-img">
                         <img src="assets/img/jumbo.png" alt="dropbox preview">
@@ -68,6 +175,7 @@
         <div class="container-small">
             <section class="plans">
                 <div class="plans-header">
+                    <div id="anchor"></div>
                     <h2>Trova il piano business che fa per te</h2>
                     <div class="checkbox">
                         <span class="bill-checked v-align-m"></span> 

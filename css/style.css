@@ -172,7 +172,7 @@ header ul{
     padding: 0px 15px;
 }
 
-.ul-left > ul > li:hover, .ul-right > ul > li:hover{
+.ul-right > ul > li:hover{
     border-bottom: 1px solid black;
     color: black;
     transition: ease-in-out .2s;
@@ -195,6 +195,7 @@ header ul{
     display: none;
     margin-left: -15px;
     animation: late-popup .3s;
+    border: 1px solid black;
 }
 
 @keyframes late-popup {

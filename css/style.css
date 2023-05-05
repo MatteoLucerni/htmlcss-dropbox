@@ -244,20 +244,22 @@ header ul li:hover{
         /* ! section media */
 
 .media-col{
-    width: calc(100% / 3);
-    height: 600px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
 }
 
 .media-box-row{
     flex-wrap: wrap;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
 }
 
 .media-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
     width: 50%;
+    height: 50%;
     border: 10px solid transparent;
 }
 

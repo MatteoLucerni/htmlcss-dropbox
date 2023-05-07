@@ -202,7 +202,6 @@ header ul{
     display: none;
     margin-left: -15px;
     animation: late-popup .3s;
-    border: 1px solid black;
 }
 
 @keyframes late-popup {
@@ -284,6 +283,7 @@ header ul{
 .plans-col{
     border: 1px solid gray;
     width: calc(100% / 3);
+    background-color: #fff;
 }
 
 .plans-col-header{

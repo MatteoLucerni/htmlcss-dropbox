@@ -278,11 +278,12 @@ header ul{
 
 .plans-main{
     column-gap: 40px;
+    flex-wrap: wrap;
 }
 
 .plans-col{
     border: 1px solid gray;
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 27px);
     background-color: #fff;
 }
 
@@ -688,4 +689,17 @@ footer ul li a:hover{
 
 .no-border{
     border: none;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.best-price{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 5px 15px;
 }

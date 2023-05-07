@@ -38,6 +38,35 @@ h1{
     cursor: pointer;
 }
 
+    /* ? section plans */
+
+.p-plans{
+    margin-bottom: 100px;
+}
+
+.plans-col-header{
+    margin-top: 50px;
+}
+
+.btn-big{
+    min-width: 320px;
+}
+
+.plans-col-main .classic-link{
+    display: inline-block;
+    margin: 6px 0px;
+}
+
+.p-plans .plans-main{
+    row-gap: 40px;
+}
+
+    /* ? section funtions */
+
+th{
+    text-align: left;
+}
+
 /* utils */
 
 .bg-black{
@@ -55,4 +84,12 @@ h1{
 
 .text-center{
     text-align: center;
+}
+
+.margin-bot-50{
+    margin-bottom: 50px;
+}
+
+.text-underline{
+    text-decoration: underline;
 }

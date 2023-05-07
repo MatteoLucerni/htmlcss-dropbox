@@ -65,7 +65,7 @@ address{
     width: 275px;
     box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.4), 0 3px 20px 0 rgba(0, 0, 0, 0.4);
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 25px;
     z-index: 1;
 }
 
@@ -80,6 +80,7 @@ address{
     color: white;
     background-color: var(--btn-blue);
     justify-content: space-between;
+    border-radius: 23px 23px 0px 0px;
 }
 
 .chat-hero{

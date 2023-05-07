@@ -1,0 +1,54 @@
+
+:root{
+    --green: #2d7903;
+}
+
+body{
+    background-color: #f7f5f1;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+/* main */
+
+    /* ? div p-hero */
+
+.p-hero{
+    margin-top: 170px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.switch{
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 40px;
+    padding: 9px 3px;
+    font-weight: 500;
+    margin-top: 3px;
+    background-color: #fff;
+}
+
+.switch-item{
+    border-radius: 40px;
+    padding: 7px 16px;
+    cursor: pointer;
+}
+
+/* utils */
+
+.bg-black{
+    color: white;
+    background-color: black;
+}
+
+.promo{
+    display: inline-block;
+    background-color: var(--green);
+    color: white;
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}

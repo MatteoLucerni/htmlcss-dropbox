@@ -63,8 +63,81 @@ h1{
 
     /* ? section funtions */
 
-th{
+table{
+    background-color: #fff;
+    display: block;
+    width: 1200px;
+    height: 700px;
+    overflow-y: auto;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+thead{
+    width: 1200px;
+}
+
+tr th{
     text-align: left;
+    width: 200px;
+}
+
+th, td{
+    border: 1px solid gray;
+}
+
+th a{
+    text-decoration: underline;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: rgb(82, 81, 81);
+}
+
+th .plans-col-main{
+    margin-bottom: 15px;
+}
+
+tbody{
+    height: 700px;
+    overflow: auto;
+}
+
+tbody th{
+    padding: 10px;
+}
+
+tbody td{
+    font-size: 0.9rem;
+    padding: 20px;
+    align-items: center;
+}
+
+tbody td > div.flex{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+tbody tr td:first-child div.flex{
+    justify-content: space-between;
+    text-align: left;
+}
+
+tbody tr td:first-child div.flex p{
+    max-width: 90px;
+}
+
+tbody div.flex i.fa-check{
+    color: var(--btn-blue);
+}
+
+tbody, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
 /* utils */
@@ -92,4 +165,10 @@ th{
 
 .text-underline{
     text-decoration: underline;
+}
+
+.buy-button{
+    padding: 9px 15px;
+    min-width: 130px;
+    display: block;
 }

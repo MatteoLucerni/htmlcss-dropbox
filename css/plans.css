@@ -140,6 +140,12 @@ tbody, tbody tr {
     table-layout: fixed;
 }
 
+thead, thead tr, thead th{
+    position: sticky;
+    top: 0;
+    background-color: lightgrey;
+}
+
 /* utils */
 
 .bg-black{

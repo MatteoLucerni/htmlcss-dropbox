@@ -146,6 +146,26 @@ thead, thead tr, thead th{
     background-color: lightgrey;
 }
 
+tr td:first-child, tr td:nth-child(2), tr th:first-child, tr th:nth-child(2){
+    background-color: #fff;
+}
+
+tr td:nth-child(3), tr th:nth-child(3){
+    background-color: #faf9f7;
+}
+
+tr td:nth-child(4), tr th:nth-child(4){
+    background-color: #f7f5f1;
+}
+
+tr td:nth-child(5), tr th:nth-child(5){
+    background-color: #f1eee8;
+}
+
+tr td:nth-child(6), tr th:nth-child(6){
+    background-color: #eee9e2;
+}
+
 /* utils */
 
 .bg-black{

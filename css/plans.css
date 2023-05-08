@@ -69,7 +69,7 @@ table{
     width: 1200px;
     height: 700px;
     overflow-y: auto;
-    border-collapse: collapse;
+    border-spacing: 0;
     margin-bottom: 100px;
 }
 

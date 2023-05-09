@@ -79,7 +79,7 @@ thead{
 
 tr th{
     text-align: left;
-    width: 200px;
+    min-width: 197px;
 }
 
 th, td{
